@@ -1,3 +1,4 @@
 <?php
 $urls = $_GET['url'];
-exec("wget --limit-rate=400023k $urls");
+$nm = $_GET['nm'];
+exec("wget --limit-rate=400023k $urls -O $nm");
